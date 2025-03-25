@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/feddit
+    username: postgres
+    password: cake1234
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+  jackson:
+    serialization:
+      indent-output: true
+    default-property-inclusion: non_null
+    deserialization:
+      fail-on-unknown-properties: true
+
+  security:
+    user:
+      name: user
+      password: y6W2oOUVysRnRzbsElSxPYBvm8EctZeZ
+feddit:
+  app:
+    jwtExpirationMs: 86400000
+    admin_password: voQTDBVxKczxNqTH6YykoDqB0vUNktMv
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
