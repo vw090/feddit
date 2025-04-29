@@ -8,11 +8,10 @@
 * [Questions](#questions)
 * [Future Features](#future-features)
 ## Description
-This is the backend for feddit, a learning project by Victor Weinert.
+This is the backend for feddit, a project by Victor Weinert.
 
-Similar to Reddit, except with posts referencing spatial data.
+Similar to Reddit
 
-Very much WIP
 ## Requirements
 - Docker
 
@@ -20,13 +19,13 @@ OR
 
 - At least java 17
 - Maven
-- Postgres DB with postgis extensions
+- Postgres DB
 
 ## Instructions
 The easiest way to run this is to use the feddit-compose repository's compose. All you need is docker.
 The instructions are in that repository @ https://github.com/vw0389/feddit-compose
 
-Either way you'll need to set several shell variables, mostly pertaining to the postGIS database
+Either way you'll need to set several shell variables, mostly pertaining to the postgres
 ### Variables
 - `${SPRING_SECURITY_USER_PASSWORD}` = at least 32 character password
 - `${POSTGRES_HOST}`
@@ -47,10 +46,9 @@ Either way you'll need to set several shell variables, mostly pertaining to the 
 * ModelMapper
 * Hibernate
 * Hibernate Validator
-* Hibernate Spatial
 * Project Lombok
 * jjwt
-* PostgresSQL with PostGIS extension
+* PostgresSQL
 ## Contributions
 
 **Victor Weinert** 
